@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "finerf5",
+	"version": "${version}",
+	"name": "FinerF5",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/finerf5/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.name.finerf5.FinerF5"
+		],
+		"client": [
+			"com.name.finerf5.FinerF5Client"
+		]
+	},
+	"mixins": [
+		"finerf5.mixins.json",
+		{
+			"config": "finerf5.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
