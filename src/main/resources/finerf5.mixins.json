@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.name.finerf5.mixin",
+	"package": "com.pang.finerf5.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

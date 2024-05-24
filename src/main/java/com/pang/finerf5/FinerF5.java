@@ -1,4 +1,4 @@
-package com.name.finerf5;
+package com.pang.finerf5;
 
 import net.fabricmc.api.ModInitializer;
 

@@ -1,4 +1,4 @@
-package com.name.finerf5.mixin.client;
+package com.pang.finerf5.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

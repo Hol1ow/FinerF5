@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "finerf5",
 	"version": "${version}",
-	"name": "FinerF5",
+	"name": "Finer F5",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.name.finerf5.FinerF5"
+			"com.pang.finerf5.FinerF5"
 		],
 		"client": [
-			"com.name.finerf5.FinerF5Client"
+			"com.pang.finerf5.FinerF5Client"
 		]
 	},
 	"mixins": [
