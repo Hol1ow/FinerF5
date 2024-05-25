@@ -1,0 +1,9 @@
+{
+    "category.finerf5.text": "Finfer F5",
+    "key.finerf5.1to3bToggle": "Toggle between 1st & 3rd back",
+    "key.finerf5.1to3fToggle": "Toggle between 1st & 3rd front",
+    "key.finerf5.3bto3fToggle": "Toggle between 3rd back & front",
+    "key.finerf5.1Switch": "Switch to 1st",
+    "key.finerf5.3bSwitch": "Switch to 3rd back",
+    "key.finerf5.3fSwitch": "Switch to 3rd front"
+}
