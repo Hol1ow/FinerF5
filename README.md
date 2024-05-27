@@ -1,5 +1,5 @@
 # FinerF5
-A simple [Minecraft](www.minecraft.net) mod that provides more refined control to your perspective switching
+A simple [Minecraft](https://www.minecraft.net/) mod that provides more refined control to your perspective switching
 ## Description
 + I made this mod to address the disorientation I feel when doing a quick perspective switching to peek and the game goes through the third perspective(front) essentially reversing the control, especially when on motive, which kind of makes me dizzy.
 + For now, six functions have been added to the control.
