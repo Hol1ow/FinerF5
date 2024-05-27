@@ -11,11 +11,11 @@ A simple [Minecraft](https://www.minecraft.net/) mod that provides more refined 
   - Switch to 3rd front (default: `None`)
   > Note: The toggle button will always switch to the primary perspective if not in any two modes can be toggled between, e.g. when you use the 1st & 3rd back toggle and you are in the 3rd front, you will be switched to 1st perspective.
 ## Demo
-1st & 3rd back toggle
++ 1st & 3rd back toggle
 ![1st & 3rd back toggle](./demo/back_toggle.gif)
-1st & 3rd front toggle
++ 1st & 3rd front toggle
 ![1st & 3rd front toggle](./demo/front_toggle.gif)
-3rd back & front toggle
++ 3rd back & front toggle
 ![3rd back & front toggle](./demo/3rdPers_toggle.gif)
 ## Future plan
 + Add a fancy perspective selector similar to game mode selector, for fun
