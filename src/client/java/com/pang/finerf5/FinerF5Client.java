@@ -7,6 +7,6 @@ public class FinerF5Client implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		//register keys
-		PerspectiveKeyBinding.registerKeys();
+		PerspectiveKeyBinding.register();
 	}
 }

@@ -10,7 +10,7 @@ import net.minecraft.client.util.InputUtil;
 
 public class PerspectiveKeyBinding {
 
-    public static void registerKeys() {
+    public static void register() {
         KeyBinding fp2tpbToggle = KeyBindingHelper.registerKeyBinding(new KeyBinding(
 			"key.finerf5.1to3bToggle", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_F6, "category.finerf5.text"));
 
