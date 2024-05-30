@@ -48,7 +48,6 @@ public class PerspectiveArgumentType implements ArgumentType<Perspective> {
        : Suggestions.empty();
     }
 
-    @Override
     public Collection<String> getExamples() {
         return EXAMPLES;
     }
