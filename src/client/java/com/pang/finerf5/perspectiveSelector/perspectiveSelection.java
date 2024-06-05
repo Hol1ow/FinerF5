@@ -7,16 +7,18 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 
-enum perspectiveSelection {
+enum PerspectiveSelection {
     FIRST_PERSON(Text.translatable("perspective.firstPerson"), "perspective firstPerson", new ItemStack(Items.ENDER_EYE)),
     THIRD_PERSON_BACK(Text.translatable("perspective.thirdPersonBack"), "perspective thirdPersonBack", new ItemStack(Blocks.PLAYER_HEAD)),
     THIRD_PERSON_FRONT(Text.translatable("perspective.thirdPersonFront"), "perspective thirdPersonFront", new ItemStack(Items.ARMOR_STAND));
+
+    protected static final PerspectiveSelection[] VALUES = values();
 
     final Text text;
     final String command;
     final ItemStack icon;
 
-    private perspectiveSelection(final Text text, final String command, final ItemStack icon) {
+    private PerspectiveSelection(final Text text, final String command, final ItemStack icon) {
         this.text = text;
         this.command = command;
         this.icon = icon;
@@ -34,8 +36,8 @@ enum perspectiveSelection {
         return this.command;
     }
 
-    perspectiveSelection next() {
-        perspectiveSelection res;
+    PerspectiveSelection next() {
+        PerspectiveSelection res;
         switch (this.ordinal()) {
             case 0:
                 res = THIRD_PERSON_FRONT;
@@ -53,8 +55,8 @@ enum perspectiveSelection {
         return res;
     }
 
-    static perspectiveSelection of(Perspective perspective) {
-        perspectiveSelection res;
+    static PerspectiveSelection of(Perspective perspective) {
+        PerspectiveSelection res;
         switch (perspective.ordinal()) {
             case 0:
                 res = FIRST_PERSON;
