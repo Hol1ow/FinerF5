@@ -8,19 +8,19 @@ import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 
 enum PerspectiveSelection {
-    FIRST_PERSON(Text.translatable("perspective.firstPerson"), "perspective firstPerson", new ItemStack(Items.ENDER_EYE)),
-    THIRD_PERSON_BACK(Text.translatable("perspective.thirdPersonBack"), "perspective thirdPersonBack", new ItemStack(Blocks.PLAYER_HEAD)),
-    THIRD_PERSON_FRONT(Text.translatable("perspective.thirdPersonFront"), "perspective thirdPersonFront", new ItemStack(Items.ARMOR_STAND));
+    FIRST_PERSON(Text.translatable("perspective.firstPerson"), Perspective.FIRST_PERSON, new ItemStack(Items.ENDER_EYE)),
+    THIRD_PERSON_BACK(Text.translatable("perspective.thirdPersonBack"), Perspective.THIRD_PERSON_BACK, new ItemStack(Items.ARMOR_STAND)),
+    THIRD_PERSON_FRONT(Text.translatable("perspective.thirdPersonFront"), Perspective.THIRD_PERSON_FRONT, new ItemStack(Blocks.PLAYER_HEAD));
 
     protected static final PerspectiveSelection[] VALUES = values();
 
     final Text text;
-    final String command;
+    final Perspective perspective;
     final ItemStack icon;
 
-    private PerspectiveSelection(final Text text, final String command, final ItemStack icon) {
+    private PerspectiveSelection(final Text text, final Perspective perspective, final ItemStack icon) {
         this.text = text;
-        this.command = command;
+        this.perspective = perspective;
         this.icon = icon;
     }
 
@@ -32,8 +32,8 @@ enum PerspectiveSelection {
         return this.text;
     }
 
-    String getCommand() {
-        return this.command;
+    Perspective getPerspective() {
+        return this.perspective;
     }
 
     PerspectiveSelection next() {
@@ -66,6 +66,7 @@ enum PerspectiveSelection {
                 break;
             case 2:
                 res = THIRD_PERSON_FRONT;
+                break;
             default:
                 throw new MatchException((String)null, (Throwable)null);
         }
