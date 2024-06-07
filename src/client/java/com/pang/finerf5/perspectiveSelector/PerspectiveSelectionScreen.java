@@ -3,6 +3,8 @@ package com.pang.finerf5.perspectiveSelector;
 import java.util.Iterator;
 import java.util.List;
 
+import net.minecraft.client.option.KeyBinding;
+
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -27,11 +29,13 @@ public class PerspectiveSelectionScreen extends Screen {
 
     private static final int UI_WIDTH = com.pang.finerf5.perspectiveSelector.PerspectiveSelection.VALUES.length * 31
             - 5;
-    private Text selectText;
 
     private PerspectiveSelection currPerspective = com.pang.finerf5.perspectiveSelector.PerspectiveSelection
             .of(this.getPreviousPerspective());
     private PerspectiveSelection perspective;
+    private KeyBinding holdKey;
+    private KeyBinding switchKey;
+    private Text selectText;
 
     private int lastMouseX;
     private int lastMouseY;
@@ -39,11 +43,14 @@ public class PerspectiveSelectionScreen extends Screen {
 
     private final List<PerspectiveSelectionScreenButton> perspectiveBtns = Lists.newArrayList();
 
-    public PerspectiveSelectionScreen(Text keyText) {
+    public PerspectiveSelectionScreen(KeyBinding holdKey, KeyBinding switchKey) {
         super(NarratorManager.EMPTY);
         this.perspective = this.currPerspective;
+        this.holdKey = holdKey;
+        this.switchKey = switchKey;
         this.selectText = Text.translatable("perspective.select_next",
-                new Object[] { Text.literal(String.format("[ %s ]", keyText.getString())).formatted(Formatting.AQUA) });
+                new Object[] { Text.literal(String.format("[ %s ]", switchKey.getBoundKeyLocalizedText().getString()))
+                        .formatted(Formatting.AQUA) });
     }
 
     @SuppressWarnings("resource")
@@ -104,12 +111,22 @@ public class PerspectiveSelectionScreen extends Screen {
     }
 
     private boolean checkForClose() {
-        if (!InputUtil.isKeyPressed(this.client.getWindow().getHandle(), InputUtil.GLFW_KEY_F4)) {
+        if (!InputUtil.isKeyPressed(this.client.getWindow().getHandle(), this.holdKey.boundKey.getCode())) {
             this.apply();
             this.client.setScreen((Screen) null);
             return true;
         } else {
             return false;
+        }
+    }
+
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        if (switchKey.matchesKey(keyCode, scanCode)) {
+            this.mouseUsedForSelection = false;
+            this.perspective = this.perspective.next();
+            return true;
+        } else {
+            return super.keyPressed(keyCode, scanCode, modifiers);
         }
     }
 
