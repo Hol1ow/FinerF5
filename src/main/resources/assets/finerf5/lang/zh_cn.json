@@ -1,9 +1,14 @@
 {
     "category.finerf5.text": "Finer F5",
-    "key.finerf5.1to3bToggle": "在一人称和三人称（背后）之间切换",
+    "key.finerf5.1to3bToggle": "在一人称和三人称（背面）之间切换",
     "key.finerf5.1to3fToggle": "在一人称和三人称（正面）之间切换",
-    "key.finerf5.3bto3fToggle": "在三人称的背后和正面之间切换",
+    "key.finerf5.3bto3fToggle": "在三人称的背面和正面之间切换",
     "key.finerf5.1Switch": "使用一人称",
-    "key.finerf5.3bSwitch": "使用三人称（背后）",
-    "key.finerf5.3fSwitch": "使用三人称（正面）"
+    "key.finerf5.3bSwitch": "使用三人称（背面）",
+    "key.finerf5.3fSwitch": "使用三人称（正面）",
+    "perspective.firstPerson": "一人称",
+    "perspective.thirdPersonBack": "三人称（背面）",
+    "perspective.thirdPersonFront": "三人称（正面）",
+    "perspective.select_next": "%s 下一个",
+    "argument.perspective.invalid": "未知视角： %s"
 }
