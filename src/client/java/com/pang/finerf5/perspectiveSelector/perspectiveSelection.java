@@ -40,10 +40,10 @@ enum PerspectiveSelection {
         PerspectiveSelection res;
         switch (this.ordinal()) {
             case 0:
-                res = THIRD_PERSON_FRONT;
+                res = THIRD_PERSON_BACK;
                 break;
             case 1:
-                res = THIRD_PERSON_BACK;
+                res = THIRD_PERSON_FRONT;
                 break;
             case 2:
                 res = FIRST_PERSON;
