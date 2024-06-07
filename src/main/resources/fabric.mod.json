@@ -8,8 +8,9 @@
 		"Hol1ow"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/Hol1ow/FinerF5"
+		"homepage": "https://github.com/Hol1ow/FinerF5",
+		"sources": "https://github.com/Hol1ow/FinerF5",
+		"issues": "https://github.com/Hol1ow/FinerF5/issues"
 	},
 	"license": "GPL-3.0 license",
 	"icon": "assets/finerf5/icon.png",
