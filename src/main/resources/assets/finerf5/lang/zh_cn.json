@@ -6,6 +6,8 @@
     "key.finerf5.1Switch": "使用一人称",
     "key.finerf5.3bSwitch": "使用三人称（背面）",
     "key.finerf5.3fSwitch": "使用三人称（正面）",
+    "key.finerf5.perspetiveSelectorHold": "弹出视角选择器",
+    "key.finerf5.perspetiveSelectorSwitch": "选择下一个视角选择器选项",
     "perspective.firstPerson": "一人称",
     "perspective.thirdPersonBack": "三人称（背面）",
     "perspective.thirdPersonFront": "三人称（正面）",

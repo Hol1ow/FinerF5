@@ -6,6 +6,8 @@
     "key.finerf5.1Switch": "Switch to 1st",
     "key.finerf5.3bSwitch": "Switch to 3rd back",
     "key.finerf5.3fSwitch": "Switch to 3rd front",
+    "key.finerf5.perspetiveSelectorHold": "Perspective selector - pop",
+    "key.finerf5.perspetiveSelectorSwitch": "perspective selector - next",
     "perspective.firstPerson": "First Person",
     "perspective.thirdPersonBack": "Third Person Back",
     "perspective.thirdPersonFront": "Third Person Front",
