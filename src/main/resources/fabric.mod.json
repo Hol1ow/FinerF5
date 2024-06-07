@@ -3,17 +3,18 @@
 	"id": "finerf5",
 	"version": "${version}",
 	"name": "Finer F5",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A simple fabric mod that provides more refined control to your perspective switching",
 	"authors": [
-		"Me!"
+		"Hol1ow"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Hol1ow/FinerF5"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0 license",
 	"icon": "assets/finerf5/icon.png",
 	"environment": "*",
+	"accessWidener" : "finerf5.accesswidener",
 	"entrypoints": {
 		"main": [
 			"com.pang.finerf5.FinerF5"
