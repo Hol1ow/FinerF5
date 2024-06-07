@@ -10,6 +10,5 @@
     "perspective.thirdPersonBack": "Third Person Back",
     "perspective.thirdPersonFront": "Third Person Front",
     "perspective.select_next": "%s Next",
-    "perspective.press_key": "",
     "argument.perspective.invalid": "Unknown perspective: %s"
 }
